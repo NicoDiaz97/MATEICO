@@ -1,0 +1,56 @@
+<html>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<head>
+    <img src="img/banner.png" class="banner">
+</head>
+
+<nav>
+    <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="news.asp">Productos</a></li>
+        <li><a href="contact.asp">Contacto</a></li>
+        <li><a href="about.asp">Quienes somos</a></li>
+        <li><a href="about.asp">Ayuda</a></li>
+        <li><a href="about.asp">Mayoristas</a></li>
+    </ul>
+</nav>
+
+<aside>
+
+    <div class="slideshow" style="max-width:500px">
+        <img class="mySlides" src="img/S1.jpg" style="width:100%">
+        <img class="mySlides" src="img/S2.jpg" style="width:100%">
+        <img class="mySlides" src="img/S3.jpg" style="width:100%">
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+</aside>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis magna condimentum eleifend egestas. Duis laoreet metus in magna bibendum ornare non non justo. Sed lacinia, arcu non mattis scelerisque, tortor ipsum rutrum mi, sed tempus lectus
+        nisi in nunc. Vestibulum sagittis non ante at imperdiet. In nec felis porttitor, congue leo eu, luctus tortor. Proin luctus tellus sed ultrices tempus. Suspendisse eleifend nibh dui, eu pulvinar quam maximus non. Proin eros dui, varius ut scelerisque
+        in, iaculis at urna. Pellentesque tincidunt elit erat, nec placerat urna sagittis a. Nam elementum tristique enim, posuere ornare magna ornare at. Aenean in lobortis quam. Sed odio urna, sagittis at viverra sed, gravida quis lacus. </p>
+
+</body>
+
+
+</html>
