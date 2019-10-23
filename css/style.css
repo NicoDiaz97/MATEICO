@@ -9,7 +9,7 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #333;
+      background-color: rgb(0, 0, 0);
   }
   
   li {
@@ -29,7 +29,7 @@
   }
   
   .active {
-      background-color: #4CAF50;
+      background-color: rgb(3, 0, 180);
   }
   
   head {
@@ -38,21 +38,28 @@
   }
   
   aside {
+      margin-top: 3%;
+      max-width: 30%;
       display: block;
       float: right;
   }
   
-  .slideshow {
-      margin-top: 5%;
-      width: 60%;
-      display: block;
-      float: right;
-  }
-  
-  p {
+  .indextext {
       margin-left: 10%;
       margin-top: 5%;
       text-align: center;
       display: block;
       width: 50%;
+  }
+  /* body {
+      margin-left: 10%;
+      margin-top: 5%;
+      text-align: center;
+      display: block;
+      width: 50%;
+  } */
+  
+  footer {
+      display: block;
+      position: absolute;
   }
