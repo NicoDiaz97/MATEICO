@@ -24,6 +24,7 @@ header .banner {
 }
 
 header nav {
+    padding-right: 50px;
     float: right;
     line-height: 120px;
 }
@@ -35,7 +36,7 @@ header nav a {
     font-family: 'Permanent Marker', cursive;
     padding: 10px 20px;
     line-height: normal;
-    font-size: 25px;
+    font-size: 26px;
     text-shadow: 3px 5px 5px black;
     -webkit-transition: all 750ms ease;
     -o-transition: all 750ms ease;
