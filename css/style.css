@@ -69,3 +69,7 @@ article {
     text-align: justify;
     line-height: 1.8;
 }
+
+textarea {
+    resize: none;
+}
