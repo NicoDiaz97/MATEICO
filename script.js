@@ -21,14 +21,15 @@ function validarFN() {
 
         if (fechafin < 18) {
 
-            alert("es menor");
+            alert("Para formar parte de nuestro staff debes ser mayor de edad.");
             document.getElementById("date").value = 0;
 
             return false;
-
         }
+        window.location = "rrhhaprobado.html";;
+
     }
-    alert("OK");
+
 
 }
 
