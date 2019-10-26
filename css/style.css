@@ -4,32 +4,31 @@
 }
 
 body {
-    background: #ffffff;
+    background: white;
 }
 
 .wrapper {
     width: 90%;
-    max-width: 1280px;
+    max-width: 1000px;
     margin: auto;
     overflow: hidden;
 }
 
 header {
     width: 100%;
+    height: 130px;
     overflow: hidden;
     background: rgb(29, 167, 48);
 }
 
 header .banner {
-    color: lemonchiffon;
-    font-size: 50px;
     line-height: 200px;
     float: left;
 }
 
 header nav {
     float: right;
-    line-height: 200px;
+    line-height: 120px;
 }
 
 header nav a {
@@ -39,11 +38,11 @@ header nav a {
     font-family: 'Permanent Marker', cursive;
     padding: 10px 20px;
     line-height: normal;
-    font-size: 20px;
-    /* elegir letra */
-    -webkit-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
+    font-size: 30px;
+    text-shadow: 3px 3px 5px black;
+    -webkit-transition: all 750ms ease;
+    -o-transition: all 750ms ease;
+    transition: all 750ms ease;
     border-radius: 50px;
 }
 
@@ -67,20 +66,4 @@ header nav a:hover {
 
 .cont p {
     margin-bottom: 1em;
-}
-
-@media screen and (max-width: 950px) {
-    header .banner,
-    header nav {
-        width: 100%;
-        text-align: center;
-        line-height: 50px;
-    }
-    .header2 {
-        height: auto;
-    }
-    .header2 .banner,
-    .header2 nav {
-        line-height: 50px;
-    }
 }
