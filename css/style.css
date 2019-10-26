@@ -1,67 +1,86 @@
-.banner {
-    width: 60%;
-    display: block;
-    margin: 0 auto;
-}
-
-ul {
-    list-style-type: none;
+* {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: rgb(0, 0, 0);
 }
 
-li {
+body {
+    background: #ffffff;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    background: rgb(29, 167, 48);
+}
+
+header .banner {
+    color: lemonchiffon;
+    font-size: 50px;
+    line-height: 200px;
     float: left;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: rgb(46, 158, 46);
-}
-
-head {
-    width: 75%;
-    height: 30%;
-}
-
-aside {
-    margin-top: 3%;
-    max-width: 30%;
-    display: block;
+header nav {
     float: right;
+    line-height: 200px;
 }
 
-.indextext {
-    margin-left: 10%;
-    margin-top: 5%;
-    text-align: center;
-    display: block;
-    width: 50%;
+header nav a {
+    display: inline-block;
+    color: lemonchiffon;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    /* elegir letra */
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    border-radius: 50px;
 }
 
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    margin-top: 50px;
-    background-color: rgb(46, 158, 46);
-    text-align: center;
+header nav a:hover {
+    background-color: rgb(0, 122, 0);
 }
 
-form {
-    position: relative;
+.header2 {
+    position: fixed;
+    height: 120px;
+}
+
+.header2 .banner {
+    line-height: 100px;
+    font-size: 100px;
+}
+
+.header2 nav {
+    line-height: 120px;
+}
+
+.cont p {
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 950px) {
+    header .banner,
+    header nav {
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+    }
+    .header2 {
+        height: auto;
+    }
+    .header .banner,
+    .header nav {
+        line-height: 50px;
+    }
 }
