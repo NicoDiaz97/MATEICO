@@ -53,7 +53,7 @@
                         <option value="8">Prefiero no especificar.</option>
                     </select required>
             <font color="red">*</font>
-            <br><br> Fecha de nacimiento: <input type="date" id="date" required>
+            <br><br> Fecha de nacimiento: <input type="text" id="date" required onblur="validarFN()">
             <font color="red">*</font>
             <br><br>Estado Civil:
             <select name="Estado Civil" required>
@@ -65,14 +65,8 @@
             <font color="red">*</font> &nbsp; &nbsp; En caso de seleccionar otro, detalle a continuacion: <input type="text"><br><br> Carta de presentacion: <br>
             <textarea name="contador" id="contador" onpaste="contarcaracteres();" onkeyup="contarcaracteres();" rows="15" cols="50"></textarea>
             <div id="res">0 caractere/s</div>
-
-
-
-
-
-            <!-- <textarea placeholder="Hasta 500 caracteres" rows="20" cols="60"></textarea> -->
             <br><br>
-            <input type="submit" value="Enviar" onsubmit="validarFN()">
+            <input type="submit" value="Enviar" onclick="validarFN()">
 
         </form>
 
