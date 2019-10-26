@@ -56,14 +56,15 @@ aside {
 }
 
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 50px;
     text-align: center;
 }
 
-.pindex {
-    padding-top: 30px;
-    padding-right: 90px;
+article {
+    padding: 30px 600px 0px 30px;
+    text-align: justify;
+    line-height: 1.8;
 }
