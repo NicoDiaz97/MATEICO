@@ -66,4 +66,5 @@ footer {
 article {
     padding: 30px 600px 0px 30px;
     text-align: justify;
+    line-height: 1.8;
 }
