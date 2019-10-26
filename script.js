@@ -7,6 +7,5 @@ function validarFN() {
     var nac = fn.split("-");
     if (aact - nac[0] >= 18) {
 
-
-    } else alert("Usuario denegado. anda a la escuela bobo.");
+    } else alert("Sos menor anda a estudiar bobo.");
 }
