@@ -32,8 +32,10 @@
     </div>
     </div>
     </header>
+    <br>
     <center>
         <h3> Dejanos tus datos para que te tengamos en cuenta para trabajar con nosotros!</h3>
+        <br>
 
         <form>
             <input type="text" value="Nombre"> &nbsp; &nbsp; <input type="text" value="Apellido"> &nbsp; &nbsp;
@@ -48,7 +50,7 @@
                         <option value="7">Asexuado</option>
                         <option value="8">Prefiero no especificar.</option>
                     </select>
-            <br><br> Fecha de nacimiento: <input type="date">
+            <br><br> Fecha de nacimiento: <input type="date" id="nacimiento">
             <br><br>Estado Civil:
             <select name="Estado Civil">
                             <option selected value="0">Seleccione...</option>
@@ -57,8 +59,11 @@
                             <option value="3">Otro...</option> 
                     </select> &nbsp; &nbsp; En caso de seleccionar otro, detalle a continuacion: <input type="text"><br><br> Carta de presentacion: <br>
             <textarea placeholder="Hasta 500 caracteres" rows="20" cols="60"></textarea>
+            <br><br>
+            <input type="button" value="Enviar" id="check" onclick="validarFN()">
 
         </form>
+
     </center>
     <footer>
         <p>Muñeco Mateico SA. Todos los derechos reservados copyright&copy;.</p>
