@@ -25,11 +25,10 @@ function validarFN() {
             document.getElementById("date").value = 0;
 
             return false;
+
         }
-        window.location = "rrhhaprobado.html";;
-
     }
-
+    window.location = "rrhhaprobado.html";;
 
 }
 

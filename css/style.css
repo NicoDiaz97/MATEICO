@@ -70,15 +70,14 @@ article {
     line-height: 1.8;
 }
 
-<<<<<<< HEAD
 .gerencia {
     padding: 50px 0px 0px 50px;
 }
 
 .img_gerencia {
     max-width: 30%;
-=======
+}
+
 textarea {
     resize: none;
->>>>>>> 7f43e170a009abc9be2120ae3f1f953ea8818bc3
 }
