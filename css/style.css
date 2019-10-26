@@ -69,3 +69,11 @@ article {
     text-align: justify;
     line-height: 1.8;
 }
+
+.gerencia {
+    padding: 50px 0px 0px 50px;
+}
+
+.img_gerencia {
+    max-width: 30%;
+}
