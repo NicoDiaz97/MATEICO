@@ -63,7 +63,11 @@ footer {
     text-align: center;
 }
 
-.pindex {
-    padding-top: 30px;
-    padding-right: 90px;
+article {
+    padding: 30px 600px 0px 30px;
+    text-align: justify;
+}
+
+h1 {
+    padding: 5px 600px 0px 30px;
 }
