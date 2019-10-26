@@ -74,13 +74,13 @@ header nav a:hover {
     header nav {
         width: 100%;
         text-align: center;
-        line-height: 100px;
+        line-height: 50px;
     }
     .header2 {
         height: auto;
     }
-    .header .banner,
-    .header nav {
+    .header2 .banner,
+    .header2 nav {
         line-height: 50px;
     }
 }
