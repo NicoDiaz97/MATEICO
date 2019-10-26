@@ -25,8 +25,10 @@ function validarFN() {
             document.getElementById("date").value = 0;
 
             return false;
+
         }
     }
+    alert("OK");
 
 }
 
@@ -42,6 +44,8 @@ function contarcaracteres() {
         document.getElementById('res').innerHTML = cantidad + ' caractere/s, te quedan ' + (total - cantidad);
         if (cantidad > total) {
             respuesta.style.color = "red";
+            alert("Superaste el limite de caracteres permitidos.");
+
         } else {
             respuesta.style.color = "black";
         }
