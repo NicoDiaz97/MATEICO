@@ -10,62 +10,63 @@
     <link rel="icon" href="img/logo.png" sizes="20x20" type="image/png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="script.js"></script>
+</head>
 
-    <body>
-        <div class="cont">
-            <header class="">
-                <div class="wrapper">
-                    <div class="banner">
-                        <img src="img/banner.png">
-                    </div>
-                    <nav>
-                        <a class="active" href="index.html">Inicio</a>
-                        <a href="qsomos.html">Quienes somos</a>
-                        <a href="productos.html">Productos</a>
-                        <a href="contacto.html">Contacto</a>
-                        <a href="rrhh.html">Trabaja con nosotros</a>
-
-                    </nav>
+<body>
+    <div class="cont">
+        <header class="">
+            <div class="wrapper">
+                <div class="banner">
+                    <img src="img/banner.png">
                 </div>
-        </div>
-        </header>
-        <aside>
-            <div class="slideshow " style="max-width: width 500px;">
-                <img class="mySlides" src="img/S1.jpg" style="width:100%">
-                <img class="mySlides" src="img/S2.jpg" style="width:100%">
-                <img class="mySlides" src="img/S3.jpg" style="width:100%">
+                <nav>
+                    <a class="active" href="index.html">Inicio</a>
+                    <a href="qsomos.html">Quienes somos</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="rrhh.html">Trabaja con nosotros</a>
+
+                </nav>
             </div>
-            <script>
-                var myIndex = 0;
-                carousel();
+    </div>
+    </header>
+    <aside>
+        <div class="slideshow " style="max-width: width 500px;">
+            <img class="mySlides" src="img/S1.jpg" style="width:100%">
+            <img class="mySlides" src="img/S2.jpg" style="width:100%">
+            <img class="mySlides" src="img/S3.jpg" style="width:100%">
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
 
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    myIndex++;
-                    if (myIndex > x.length) {
-                        myIndex = 1
-                    }
-                    x[myIndex - 1].style.display = "block";
-                    setTimeout(carousel, 2000); // cambia la imagen cada 2 seg. (2sx1000ms)
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
                 }
-            </script>
-        </aside>
-        <div>
-            <p class="indextext">Nos dedicamos a la fabricación de mates y bombillas personalizadas de venta exclusivamente online.
-                <br><br> Contamos con un variado catalogo para que elijas el que más te guste.
-                <br><br> Un mate es un regalo ideal para cualquier ocasion, por eso te ofrecemos la posibilidad de hacer tu diseño personalizado, eligiendo el material y el diseño a grabar en el mate, además te damos a elección distintos tipos de envoltorios
-                para ajustarse a la ocasión y que tu regalo sea el mejor.</p>
-        </div>
-        <footer>
-            <p>Muñeco Mateico SA. Todos los derechos reservados copyright&copy;.</p>
-        </footer>
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // cambia la imagen cada 2 seg. (2sx1000ms)
+            }
+        </script>
+    </aside>
+    <div>
+        <p class="indextext">Nos dedicamos a la fabricación de mates y bombillas personalizadas de venta exclusivamente online.
+            <br><br> Contamos con un variado catalogo para que elijas el que más te guste.
+            <br><br> Un mate es un regalo ideal para cualquier ocasion, por eso te ofrecemos la posibilidad de hacer tu diseño personalizado, eligiendo el material y el diseño a grabar en el mate, además te damos a elección distintos tipos de envoltorios
+            para ajustarse a la ocasión y que tu regalo sea el mejor.</p>
+    </div>
+    <footer>
+        <p>Muñeco Mateico SA. Todos los derechos reservados copyright&copy;.</p>
+    </footer>
 
-        </div>
-    </body>
+    </div>
+</body>
 
 
 
