@@ -41,31 +41,34 @@
             <input type="text" placeholder="Nombre" required>
             <font color="red">*</font> &nbsp; &nbsp; <input type="text" placeholder="Apellido" required>
             <font color="red">*</font> &nbsp; &nbsp;
-            <select name="Sexo" required>
+            <select name="Sexo">
                         <option selected value="0"> Sexo... </option>
-                        <option value="1">Hombre</option> 
-                        <option value="2">Mujer</option> 
-                        <option value="3">Windows XP</option>
-                        <option value="4">Debian</option> 
-                        <option value="5">Homosexual</option> 
-                        <option value="6">LGBTQRSPQ</option>
-                        <option value="7">Asexuado</option>
-                        <option value="8">Prefiero no especificar.</option>
+                        <option value="1">Masculino</option> 
+                        <option value="2">Femenino</option> 
+                        <option value="3">Prefiero no especificar.</option>
                     </select required>
             <font color="red">*</font>
-            <br><br> Fecha de nacimiento: <input type="text" id="date" placeholder="dd/mm/aaaa" required>
+            <br>
+            <br> 
+            Fecha de nacimiento: <input type="text" id="date" placeholder="dd/mm/aaaa" required>
             <font color="red">*</font>
-            <br><br>Estado Civil:
+            <br>
+            <br>
+            Estado Civil:
             <select name="Estado Civil" required>
                             <option selected value="0">Seleccione...</option>
                             <option value="1">Casadx</option> 
                             <option value="2">Solterx</option>
                             <option value="3">Otro...</option> 
                     </select>
-            <font color="red">*</font> &nbsp; &nbsp; En caso de seleccionar otro, detalle a continuacion: <input type="text"><br><br> Carta de presentacion: <br>
+            <font color="red">*</font> &nbsp; &nbsp; En caso de seleccionar otro, detalle a continuacion: <input type="text">
+            <br>
+            <br> Carta de presentacion:
+            <br>
             <textarea name="contador" id="contador" onpaste="contarcaracteres();" onkeyup="contarcaracteres();" rows="15" cols="50" required></textarea>
             <div id="res">0 caractere/s</div>
-            <br><br>
+            <br>
+            <br>
             <input type="submit" value="Enviar" onclick="validarFN()">
 
         </form>
