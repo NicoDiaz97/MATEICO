@@ -5,6 +5,7 @@
 
 body {
     background: white;
+    text-align: center;
 }
 
 header {
@@ -54,6 +55,31 @@ aside {
     max-width: 500px;
     float: right;
 }
+
+a.bpedidos {
+    display: block;
+    padding: 0.35em 1.2em;
+    border: 0.5em green;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 300;
+    color: rgb(29, 167, 48);
+    text-align: center;
+    transition: all 0.2s;
+}
+
+a.bpedidos:hover {
+    color: #000000;
+    background-color: rgb(29, 167, 48);
+}
+
+
+/* div.boton {
+    margin-top: 200px;
+} */
 
 footer {
     position: relative;
