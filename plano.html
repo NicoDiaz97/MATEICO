@@ -34,18 +34,18 @@
     <h1> PEDIDOS</h1>
     <br>
     <h2> HACE TU PEDIDO ONLINE - ENVIOS A TODO EL PAIS</h2>
-
-    <h3> Cliente:</h3>
-    Apellido Y Nombre &#32;<input type="text" placeholder="Apellido y Nombre" required maxlength="50" size="50" autofocus="" /> *
-    <br>
-    <br> Correo &#32;<input type="text" placeholder="Correo" size="60" required/> *
-    <br>
-    <br> Celular &#32;<input type="number" placeholder="Celular" required> *
-    <br>
-    <br> Telefono &#32;<input type="number" placeholder="Telefono" />
-    <br>
-    <br> Seleccione la provincia
-    <select>
+    <form>
+        <h3> Cliente:</h3>
+        Apellido Y Nombre &#32;<input type="text" placeholder="Apellido y Nombre" required maxlength="50" size="50" autofocus="" /> *
+        <br>
+        <br> Correo &#32;<input type="text" placeholder="Correo" size="60" />
+        <br>
+        <br> Celular &#32;<input type="number" placeholder="Celular" minlength="7">
+        <br>
+        <br> Telefono &#32;<input type="number" placeholder="Telefono" minlength="7" />
+        <br>
+        <br> Seleccione la provincia
+        <select>
                 <option value="Buenos Aires">Buenos Aires</option>
                 <option value=" Catamarca"> Catamarca</option>            
                 <option value=" CÃ³rdoba"> CÃ³rdoba</option>
@@ -64,18 +64,19 @@
                 <option value="Santa Fe">Santa Fe</option>
                 <option value="Tierra del Fuego">Tierra del Fuego</option>   
         </select> &nbsp;&nbsp;&nbsp; Ciudad &#32;<input type="text" placeholder="Ciudad" size="60" required/> *
-    <br>
-    <br> Domicilio &#32;<input type="text" placeholder="Domicilio" size="60" required/> *
-    <br>
-    <br> Seleccione: <label><input type="radio" name=cade required > Casa </label>
-    <br>
-    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <label><input type="radio" name=cade required >  Departamento &nbsp;&nbsp;&nbsp;&nbsp;</label> Piso
-    <input type="text" size="3" maxlength="1"> Letra
-    <input type="text" size="3" maxlength="1">
-    <h3> Pedido:</h3>
-    Elija el producto
-    <select>
+        <br>
+        <br> Domicilio &#32;<input type="text" placeholder="Domicilio" size="60" required/> *
+        <br>
+        <br> Seleccione: <label><input type="radio" name=cade required > Casa </label>
+        <br>
+        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label><input type="radio" name=cade required >  Departamento &nbsp;&nbsp;&nbsp;&nbsp;</label> Piso
+        <input type="text" size="3" maxlength="1"> Letra
+        <input type="text" size="3" maxlength="1">
+        <h3> Pedido:</h3>
+        Elija el producto
+
+        <select>
                 <option value="mate pajaritos">Mate pajaritos</option>
                 <option value="mate gaucho"> mate gaucho</option>            
                 <option value="mate madera"> mate madera</option>
@@ -86,16 +87,18 @@
                 <option value="bombilla 2"> bombilla 2</option>            
                 <option value="bombilla 3"> bombilla 3</option>
                 <option value="bombilla 4">bombilla 4</option>
+                <option value="bombilla 4">bombilla 5</option>
+                <option value="bombilla 4">bombilla 6</option>
         </select>
-    <br>
-    <br> Elija la cantidad &nbsp;<input type="number" required min='1' max='1000' required/>
-    <br>
-    <br> Dejenos su consulta:
-    <br>
-    <textarea rows="10" cols="70" resize:none maxlength="1000" placeholder="ingrese aqui"></textarea>
-    <br><br>
-    <input type="submit"><br><br>
-
+        <br>
+        <br> Elija la cantidad &nbsp;<input type="number" required min='1' max='1000' required/>
+        <br>
+        <br> Dejenos su consulta:
+        <br>
+        <textarea rows="10" cols="70" resize:none maxlength="1000" placeholder="ingrese aqui"></textarea>
+        <br><br>
+        <input type="submit"><br><br>
+    </form>
 
     <bold>Atencion</bold> los productos tienen una demora de maximo 7 dias habiles y si no te devolvemos tu dinero.(Valido solo para la republica Argentina)</h4>
     <footer>
