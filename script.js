@@ -28,7 +28,7 @@ function validarFN() {
 
         }
     }
-    window.location = "rrhhaprobado.html";;
+    window.location = "rrhhaprobado.html";
 
 }
 
