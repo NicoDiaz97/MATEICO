@@ -2,26 +2,27 @@ function validarFN() {
 
     var fechaej = document.getElementById("date").value;
 
-    var fecha4 = fechaej.split('/');
-    var dia = fecha4[0];
+    var fecha4 = fechaej.split('-');
+
+    var dia = fecha4[2];
     var mes = fecha4[1];
-    var año = fecha4[2];
+    var año = fecha4[0];
 
     if (dia < 1 || dia > 31 || mes < 1 || mes > 12 || año < 1900 || año > new Date().getFullYear()) {
-        alert("poner una fecha valida");
+        alert("Ingresa una fecha válida.");
 
         return false;
     } else {
 
-        var fecha3 = new Date(fecha4[2], fecha4[1], fecha4[0]);
+        var fecha3 = new Date(año, mes - 1, dia);
         var fecha2 = new Date();
-        fechafin = (fecha2.getTime() - fecha3.getTime()) / 1000 / 60 / 60 / 24 / 360;
 
+        fechafin = (fecha2.getTime() - fecha3.getTime()) / 1000 / 60 / 60 / 24 / 365;
 
         if (fechafin < 18) {
 
             alert("Para formar parte de nuestro staff debes ser mayor de edad.");
-            document.getElementById("date").value = 0;
+            /* document.getElementById("date").value = 0; */
 
             return false;
 
