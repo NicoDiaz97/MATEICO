@@ -11,93 +11,94 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="script.js"></script>
+</head>
 
-    <body>
-        <div class="cont">
-            <header class="">
-                <div class="wrapper">
-                    <div class="banner">
-                        <img src="img/banner.png">
-                    </div>
+<body>
+    <div class="cont">
+        <header class="">
+            <div class="wrapper">
+                <div class="banner">
+                    <img src="img/banner.png">
                 </div>
-                <nav>
-                    <a class="active" href="index.html">Inicio</a>
-                    <a href="qsomos.html">Quienes somos</a>
-                    <a href="productos.html">Productos</a>
-                    <a href="contacto.html">Contacto</a>
-                    <a href="rrhh.html">Trabaja con nosotros</a>
-
-                </nav>
-        </div>
-        </div>
-        </header>
-        <aside>
-            <div class="slideshow" style="max-width: width 500px;">
-                <img class="mySlides" src="img\Flia.jpg" style="width:100%">
-                <img class="mySlides" src="img\mateando.jpg" style="width:100%">
-                <img class="mySlides" src="img\pibe.jpg" style="width:100%">
             </div>
+            <nav>
+                <a class="active" href="index.html">Inicio</a>
+                <a href="qsomos.html">Quienes somos</a>
+                <a href="productos.html">Productos</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="rrhh.html">Trabaja con nosotros</a>
 
-            <script>
-                var myIndex = 0;
-                carousel();
+            </nav>
+    </div>
+    </div>
+    </header>
+    <aside>
+        <div class="slideshow" style="max-width: width 500px;">
+            <img class="mySlides" src="img\Flia.jpg" style="width:100%">
+            <img class="mySlides" src="img\mateando.jpg" style="width:100%">
+            <img class="mySlides" src="img\pibe.jpg" style="width:100%">
+        </div>
 
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    myIndex++;
-                    if (myIndex > x.length) {
-                        myIndex = 1
-                    }
-                    x[myIndex - 1].style.display = "block";
-                    setTimeout(carousel, 2000); // cambia la imagen cada 2 seg. (2sx1000ms)
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
                 }
-            </script>
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // cambia la imagen cada 2 seg. (2sx1000ms)
+            }
+        </script>
 
-        </aside>
+    </aside>
 
-        <div>
-            <br>
+    <div>
+        <br>
 
-            <br>
-            <article>
-                <h1>Muñeco Mateico o muñequito, breve reseña historica de una tradicion de excelencia</h1>
-                <p>
-                    En el año 1919 llega a las costas del Río de la Plata el corsario Speranza di Laverni, el cual albergaba a Don Steffano y flia. La promesa de grandes oportunidades en el nuevo continente es lo que impulsa a "Muñeco Mateico" a ser un organizacion pujante
-                    y comprometida desde el inicio de su actividad, en los años posteriores al asentamiento en el barrio de Avellaneda. Es entonces, una certera descripcion de esta marca, la calidad y excelencia, caracteristicas de nuestros productos
-                    que brindan un testimonio inconfundible de esa mision.
-                </p>
-            </article>
-            <article>
-                <h1>100 años de Mateico</h1>
-                <p>Al día de la fecha nuestra organizacion es sinónimo de calidad y compromiso tanto para con sus clientes asi como el ecosistema, implementando politicas sustentables hacia el entorno y reafirmando la creencia de Don Steffano Mateico, enunciando
-                    "Un negocio que solo hace dinero, es un negocio pobre." dejando en claro las metas de su emprendimiento.</p>
-                <img src="img\100.jpg" style="margin: 30px 0px  0px 50px;">
-            </article>
-            <article>
-                <h1>Código de la misión: M.A.T.E.I.C.O.</h1>
-                <p>Es entonces nuestra mision mantener la vigencia y el prestigio, tarea que compete a cada uno de los integrantes de nuestra gran familia, comprometidos a continuar brindando un servicio de primer nivel a nuestros solicitantes, a lo largo
-                    de nuestra mision.</p>
-                <img src="img\Organigrama.jpg" alt="">
-            </article>
-            <article>
-                <h1>Las oficinas de Muñeco Mateico y sus trabajadores</h1>
-                <div class="gerencia">
-                    <img class="img_gerencia" src="img/2.jpeg">
-                    <img class="img_gerencia" src="img/3.jpeg">
-                    <img class="img_gerencia" src="img/4.jpeg">
-                </div>
-            </article>
-        </div>
-        <footer>
-            <p>Muñeco Mateico SA. Todos los derechos reservados copyright&copy;.<br> Tomasevich-Omedes-Guibes-Diaz-Bayochi
+        <br>
+        <article>
+            <h1>Muñeco Mateico o muñequito, breve reseña historica de una tradicion de excelencia</h1>
+            <p>
+                En el año 1919 llega a las costas del Río de la Plata el corsario Speranza di Laverni, el cual albergaba a Don Steffano y flia. La promesa de grandes oportunidades en el nuevo continente es lo que impulsa a "Muñeco Mateico" a ser un organizacion pujante
+                y comprometida desde el inicio de su actividad, en los años posteriores al asentamiento en el barrio de Avellaneda. Es entonces, una certera descripcion de esta marca, la calidad y excelencia, caracteristicas de nuestros productos que
+                brindan un testimonio inconfundible de esa mision.
             </p>
-        </footer>
-        </div>
-    </body>
+        </article>
+        <article>
+            <h1>100 años de Mateico</h1>
+            <p>Al día de la fecha nuestra organizacion es sinónimo de calidad y compromiso tanto para con sus clientes asi como el ecosistema, implementando politicas sustentables hacia el entorno y reafirmando la creencia de Don Steffano Mateico, enunciando
+                "Un negocio que solo hace dinero, es un negocio pobre." dejando en claro las metas de su emprendimiento.</p>
+            <img src="img\100.jpg" style="margin: 30px 0px  0px 50px;">
+        </article>
+        <article>
+            <h1>Código de la misión: M.A.T.E.I.C.O.</h1>
+            <p>Es entonces nuestra mision mantener la vigencia y el prestigio, tarea que compete a cada uno de los integrantes de nuestra gran familia, comprometidos a continuar brindando un servicio de primer nivel a nuestros solicitantes, a lo largo de
+                nuestra mision.</p>
+            <img src="img\Organigrama.jpg" alt="">
+        </article>
+        <article>
+            <h1>Las oficinas de Muñeco Mateico y sus trabajadores</h1>
+            <div class="gerencia">
+                <img class="img_gerencia" src="img/2.jpeg">
+                <img class="img_gerencia" src="img/3.jpeg">
+                <img class="img_gerencia" src="img/4.jpeg">
+            </div>
+        </article>
+    </div>
+    <footer>
+        <p>Muñeco Mateico SA. Todos los derechos reservados copyright&copy;.<br> Tomasevich-Omedes-Guibes-Diaz-Bayochi
+        </p>
+    </footer>
+    </div>
+</body>
 
 
 
