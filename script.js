@@ -1,6 +1,5 @@
 function validarFN() {
 
-
     var fechaej = document.getElementById("date").value;
 
     var fecha4 = fechaej.split('/');
@@ -26,7 +25,8 @@ function validarFN() {
 
             return false;
 
-        } else window.location = "rrhhaprobado.html"
+        } else location.href = "rrhhaprobado.html"
+            /* window.location = "rrhhaprobado.html" */
     }
 
 

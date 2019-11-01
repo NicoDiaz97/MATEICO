@@ -37,7 +37,7 @@
         <h3> Dejanos tus datos para que te tengamos en cuenta para trabajar con nosotros!</h3>
         <br>
 
-        <form>
+        <form onsubmit="event.preventDefault() , validarFN()">
             <input type="text" placeholder="Nombre" required>
             <font color="red">*</font> &nbsp; &nbsp; <input type="text" placeholder="Apellido" required>
             <font color="red">*</font>
@@ -69,7 +69,7 @@
             <div id="res">0 caractere/s</div>
             <br>
             <br>
-            <input type="submit" value="Enviar" onclick="validarFN()">
+            <input type="submit" value="Enviar">
 
         </form>
 
