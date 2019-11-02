@@ -12,6 +12,8 @@ function validarCampos() {
 
     if (nombre == ' ' || apellido == ' ' || sexo == ' ' || fecha == ' ' || eCivil == ' ' || tel == ' ' || email == ' ' || contador == ' ') {
         alert('Algunos de los campos requeridos estan vacios.');
+    } else if (!/^([0-9])*$/.test(tel)) {
+        alert("El valor " + tel + " no es un número de telefono valido.");
     } else verificarDatos();
 
 }
