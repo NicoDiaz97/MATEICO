@@ -1,3 +1,22 @@
+function validarCampos() {
+    var nombre = document.getElementById("nombre").value;
+    var apellido = document.getElementById("apellido").value;
+    var sexo = document.getElementById("sexo").value;
+    var fecha = document.getElementById("date").value;
+    var eCivil = document.getElementById("eCivil").value;
+    var tel = document.getElementById("tel").value;
+    var email = document.getElementById("email").value;
+    var contador = document.getElementById("contador").value;
+
+    if ((!/^([0-9])*$/.test(tel))) {
+        alert("Ingrese un telefono/celular correcto")
+    } else if (nombre == '' || apellido == '' || sexo == '' || fecha == '' || eCivil == '' || tel == '' || email == '' || contador == '') {
+        alert('Algunos de los campos requeridos estan vacios.');
+    } else validarFN();
+
+}
+
+
 function validarFN() {
 
     var fechaej = document.getElementById("date").value;
@@ -32,6 +51,7 @@ function validarFN() {
 
 
 }
+
 
 function contarcaracteres() {
 

@@ -37,31 +37,38 @@
         <h3> Dejanos tus datos para que te tengamos en cuenta para trabajar con nosotros!</h3>
         <br>
 
-        <form onsubmit="event.preventDefault() , validarFN()">
-            <input type="text" placeholder="Nombre" required>
-            <font color="red">*</font> &nbsp; &nbsp; <input type="text" placeholder="Apellido" required>
+        <form onsubmit="event.preventDefault() ,validarCampos()">
+            <input type="text" placeholder="Nombre" id="nombre">
+            <font color="red">*</font> &nbsp; &nbsp;
+            <input type="text" placeholder="Apellido" id="apellido" required>
             <font color="red">*</font>
             <br>
             <br>
-            <select name="Sexo">
+            <select name="Sexo" id="sexo" required>
                         <option selected value="0"> Sexo... </option>
                         <option value="1">Masculino</option> 
                         <option value="2">Femenino</option> 
                         <option value="3">Prefiero no especificar.</option>
-                    </select required>
-            <font color="red">*</font> &nbsp; &nbsp;
-            Fecha de nacimiento: <input type="date" id="date" placeholder="dd/mm/aaaa" required>
+                    </select>
+            <font color="red">*</font> &nbsp; &nbsp; Fecha de nacimiento:
+            <input type="date" id="date" placeholder="dd/mm/aaaa" required>
             <font color="red">*</font>
             <br>
-            <br>
-            Estado Civil:
-            <select name="Estado Civil" required>
+            <br> Estado Civil:
+            <select name="Estado Civil" id="eCivil" required>
                             <option selected value="0">Seleccione...</option>
                             <option value="1">Casadx</option> 
                             <option value="2">Solterx</option>
                             <option value="3">Otro...</option> 
                     </select>
-            <font color="red">*</font> &nbsp; &nbsp; En caso de seleccionar otro, detalle a continuacion: <input type="text">
+            <font color="red">*</font> &nbsp; &nbsp; En caso de seleccionar otro, detalle a continuacion:
+            <input type="text">
+            <br>
+            <br>
+            <input type="text" id="tel" placeholder="Telefono/Celular" required>
+            <font color="red">*</font> &nbsp; &nbsp;
+            <input type="email" id="email" placeholder="E-Mail" required>
+            <font color="red">*</font>
             <br>
             <br> Carta de presentacion:
             <br>
